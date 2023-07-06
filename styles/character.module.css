@@ -1,0 +1,73 @@
+.characterWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.detail {
+  background-color: rgba(14, 97, 54, 0.53);
+  color: #A7CB54;
+  border-radius: 1rem;
+  border: solid #5CAD4A;
+  overflow: hidden;
+}
+
+.info {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.picture {
+  border-radius: 0 0 1rem  0;
+  border-bottom: solid #5CAD4A;
+  border-right: solid #5CAD4A;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 70%;
+}
+
+.back {
+  background-color: #5CAD4A;
+  color: white;
+  width: 60%;
+  margin: .5rem .5rem;
+}
+
+.back:hover {
+  color: #A7CB54;
+  background-color: rgba(14, 97, 54, 0.53);
+  border-color: #A7CB54;
+  -webkit-box-shadow: #5CAD4A;
+          box-shadow: #5CAD4A;
+}
+
+.episodeList {
+  margin-left: 2rem;
+}
+
+.episodeLink {
+  text-decoration: none;
+  color: #A7CB54;
+}
+
+.episodeLink:hover {
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .characterWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .characterWrapper .picture {
+    width: auto;
+    border-radius: 0%;
+  }
+  .episodeList {
+    margin-left: 5rem;
+  }
+}
+/*# sourceMappingURL=character.module.css.map */
